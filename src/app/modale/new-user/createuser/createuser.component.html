@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)="submitUser()">
+                <div class="form-group">
+                    <input type="text" name="name" [(ngModel)]="user.name" class="form-control" placeholder="Nombre" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lastName" [(ngModel)]="user.lastName" class="form-control" placeholder="Apellido" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="dni" [(ngModel)]="user.dni" class="form-control" placeholder="Dni" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="date" name="date" [(ngModel)]="user.date" class="form-control" placeholder="Fecha de Nacimiento" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" [(ngModel)]="user.phone" class="form-control" placeholder="Telefono" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="diretion" [(ngModel)]="user.diretion" class="form-control" placeholder="Dirección" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="user" [(ngModel)]="user.user" class="form-control" placeholder="Usuario" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Contraseña" autofocus>
+                </div>
+                <button class="btn btn-primary btn-block">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

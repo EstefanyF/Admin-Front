@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-4 offset-md-4">
+      <div class="card card-body">
+          <form (submit)="submitProduct()">
+              <div class="form-group">
+                  <input type="text" name="name" [(ngModel)]="product.nombre" class="form-control" placeholder="Nombre" autofocus>
+              </div>
+              <div class="form-group">
+                  <input type="text" name="marca" [(ngModel)]="product.marca" class="form-control" placeholder="Marca" autofocus>
+              </div>
+              <div class="form-group">
+                  <input type="text" name="description" [(ngModel)]="product.description" class="form-control" placeholder="Descripcion" autofocus>
+              </div>
+              <div class="form-group">
+                <input type="text" name="imageURL" [(ngModel)]="product.imageURL" class="form-control" placeholder="Imagen url" autofocus>
+            </div>
+            <div class="form-group">
+              <input type="number" name="precio" [(ngModel)]="product.precio" class="form-control" placeholder="Precio" autofocus>
+          </div>
+              <button class="btn btn-primary btn-block">
+                  Guardar
+              </button>
+          </form>
+      </div>
+  </div>
+</div>

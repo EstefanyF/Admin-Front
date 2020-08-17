@@ -1,0 +1,41 @@
+<div class="container">
+  <hr>
+  <button type="button" class="btn btn-success btn-lg pull-right float-right" (click)="btnClick()">AGREGAR</button>
+  <h2>Todos los productos</h2>
+  <span class="clearfix"></span>
+  <hr>
+  </div>
+
+  <div *ngFor="let product of products" class="card card-body mb-2">
+    <div class="row">
+      <div class="col-md-8">
+        <ul>
+          <li>
+            id: {{product._id}}
+          </li>
+          <li>
+            Nombre: {{product.nombre}}
+          </li>
+          <li>
+            descripción: {{product.description}}
+          </li>
+          <li>
+            Imagen: {{product.image}}
+          </li>
+          <li>
+            precio: {{product.precio}}
+          </li>
+          
+        </ul>
+        <button class="btn btn-danger" (click)="deleteProduct(product._id)">
+          Eliminar
+        </button>
+        <button class="btn btn-secondary" [routerLink]="['/newproduct/edit', product._id]">
+          Editar
+        </button>
+      </div>
+      <div class="col-md-4">
+        <img [src]="product.imageURL" class="card-img">
+      </div>
+    </div>
+  </div>

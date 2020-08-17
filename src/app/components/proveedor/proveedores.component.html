@@ -1,0 +1,37 @@
+<div class="container">
+  <hr>
+  <button type="button" class="btn btn-success btn-lg pull-right float-right" (click)="btnClick()">AGREGAR</button>
+  <h2>Todos los proveedores</h2>
+  <span class="clearfix"></span>
+  <hr>
+  </div>
+
+  <div *ngFor="let proveedor of proveedores" class="card card-body mb-2">
+    <div class="row">
+      <div class="col-md-8">
+        <ul>
+          <li>
+            id: {{proveedor._id}}
+          </li>
+          <li>
+            Nombre: {{proveedor.name}}
+          </li>
+          <li>
+            Dirección: {{proveedor.direction}}
+          </li>
+          <li>
+            Telefono: {{proveedor.phone}}
+          </li>
+        </ul>
+        <button class="btn btn-danger" (click)="deleteProveedor(proveedor._id)">
+          Eliminar
+        </button>
+        <button class="btn btn-secondary" [routerLink]="['/newuser/edit', proveedor._id]">
+          Editar
+        </button>
+      </div>
+      <div class="col-md-4">
+  
+      </div>
+    </div>
+  </div>
