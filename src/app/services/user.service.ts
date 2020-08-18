@@ -35,5 +35,8 @@ export class UserService {
     return this.http.put<User>(`${this.BASE_URL}/user/update?userID=${id}`, user);
 
   }
-
+  
+  login(request: any) {
+    return this.http.post(`${this.BASE_URL}/user/login`, request);
+  }
 }

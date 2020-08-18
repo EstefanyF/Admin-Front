@@ -15,7 +15,7 @@ export class NewProveedorComponent implements OnInit {
   proveedor: Proveedor = {
     
     nombre: '',
-    direction: '',
+    diretion: '',
     phone: 0
   };
 

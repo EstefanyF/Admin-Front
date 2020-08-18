@@ -14,10 +14,10 @@
             id: {{proveedor._id}}
           </li>
           <li>
-            Nombre: {{proveedor.name}}
+            Nombre: {{proveedor.nombre}}
           </li>
           <li>
-            Dirección: {{proveedor.direction}}
+            Dirección: {{proveedor.diretion}}
           </li>
           <li>
             Telefono: {{proveedor.phone}}
@@ -26,7 +26,7 @@
         <button class="btn btn-danger" (click)="deleteProveedor(proveedor._id)">
           Eliminar
         </button>
-        <button class="btn btn-secondary" [routerLink]="['/newuser/edit', proveedor._id]">
+        <button class="btn btn-secondary" [routerLink]="['/newproveedor/edit', proveedor._id]">
           Editar
         </button>
       </div>

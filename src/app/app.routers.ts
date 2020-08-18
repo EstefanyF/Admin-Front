@@ -13,6 +13,7 @@ import { NewProveedorComponent } from './modale/new-proveedor/new-proveedor.comp
 
 
 
+
 const APP_ROUTING :Routes = [
     {path: 'producto', component: ProductosComponent},
     {path: 'proveedor', component: ProveedoresComponent},

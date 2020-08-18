@@ -35,6 +35,7 @@ export class ProveedoresComponent implements OnInit {
   btnClick=function(){
     this.router.navigate(['/newproveedor']);
   }
+  
   deleteProveedor(id: string){
     this.proveedorService.deleteProveedor(id)
     .subscribe(

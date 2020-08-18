@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
+
 import { ProductosComponent } from './components/productos/productos.component';
 import { HomeComponent } from './components/home/home.component';
 
@@ -14,7 +14,7 @@ import { UserComponent } from './components/user/user.component';
 import { app_routing } from './app.routers';
 import { HttpClientModule } from '@angular/common/http';
 
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {PopupModule} from 'ng2-opd-popup';
 import { CreateuserComponent } from './modale/new-user/createuser/createuser.component';
@@ -26,7 +26,6 @@ import { NewProductComponent } from './modale/new-product/new-product.component'
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     ProductosComponent,
     HomeComponent,
     PagosComponent,
@@ -42,6 +41,7 @@ import { NewProductComponent } from './modale/new-product/new-product.component'
     app_routing,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     PopupModule.forRoot(),
   ],
   providers: [],
